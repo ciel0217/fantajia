@@ -2,7 +2,7 @@ from selenium import webdriver
 import chromedriver_binary  # Adds chromedriver binary to path
 import time
 import csv
-driver = webdriver.Chrome("D:/chromedriver.exe")
+driver = webdriver.Chrome()
 driver.get("https://fantasiabunko.jp/")
 path= driver.find_elements_by_xpath('/html/body/main/section[4]/div/section[2]/ul/li[*]/figure/div/a')
 csvlist = []
